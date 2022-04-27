@@ -47,13 +47,13 @@ class JMPEstadisticas:
         caracteristica = self.caracteristica.sort_values()
         caracteristica = caracteristica.reset_index(drop=True)
         n = self.caracteristica.count()
-        par = False;
+        par = False
         if (n % 2 == 0):
             print("La cantidad de observaciones es par.")
             par = True
 
         if par:
-            rango = (n / 2);
+            rango = (n / 2)
             print("RANGO = "+str(rango))
             rangoPython = rango-1
             valor1 = caracteristica[rangoPython]
