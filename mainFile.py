@@ -22,7 +22,7 @@ import numpy as np
 
 #--- CREACION DE UN DATAFRAME ----
 dato = pnd.read_csv("notas.csv", header= 0, sep= ";")
-notas = list(dato[""])
+notas = list(dato["Tema"])
 observaciones = pnd.DataFrame({'NOTAS': notas})
 
 #--- ANALISIS DE UNA CARACTERISTICA ---
