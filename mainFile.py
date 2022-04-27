@@ -16,14 +16,13 @@
 #   Haga clic en el botón install situado en la parte inferior izquierda
 #-----------------------------------------------------------------------------------------
 
-
 import pandas as pnd
 import JMPEstadisticas as jmp
 import numpy as np
 
 #--- CREACION DE UN DATAFRAME ----
 dato = pnd.read_csv("notas.csv", header= 0, sep= ";")
-notas = list(dato["Tema"])
+notas = list(dato[""])
 observaciones = pnd.DataFrame({'NOTAS': notas})
 
 #--- ANALISIS DE UNA CARACTERISTICA ---
